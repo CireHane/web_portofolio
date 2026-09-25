@@ -1,0 +1,12 @@
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    height: 200px;
+}
+
+.gallery-card-subtext{
+    color: rgba(0,0,0,0.5);
+}
