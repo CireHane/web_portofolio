@@ -1,12 +1,100 @@
 
+html{
+    text-decoration: none;
+}
+
+a{
+   text-decoration: none;
+}
+
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Carme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
 }
 
-img{
-    height: 200px;
+header{
+    position: relative;
 }
 
-.gallery-card-subtext{
-    color: rgba(0,0,0,0.5);
+.thumbnail{
+    width: 100%;
+    aspect-ratio: 16/5;
+    background-image: url("https://placehold.co/1600x900");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+}
+.navbar{
+    padding: 1rem 3rem;
+}
+
+.nav-link, .nav-item button{
+    font-size: 1.2rem;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+
+.gallery{
+    padding: 3em;
+    box-shadow: 0 3em 3em #C8C9CA;
+    border-radius: 1.5rem;
+    background-color: var(--primary-container-color);
+}
+
+.gallery .card{
+    transition: ease-in-out 0.1s;
+    background-color: var(--primary-container-color);
+    border-radius: 10%;
+    min-height: max-content;
+}
+
+.gallery .card:hover{
+    transition: ease-in-out 0.1s;
+    box-shadow: 0 0 0.5rem 0.1rem #C8C9CA;
+    transform: scale(101%);
+}
+
+.gallery-card h1,h2,h3,h4,h5,h6{
+    color: var(--primary-color);
+}
+
+.gallery-card img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 10% 10% 0 0;
+}
+
+.gallery-card p{
+    font-size: 0.8rem;
+    line-height: 120%;
+    color: var(--primary-transparant-color)
+}
+
+footer{
+    margin-top: 7rem;
+    background-color: black;
+}
+
+footer li{
+    padding: 1rem;
+    background-color: var(--primary-bg-color);
+    border-radius: 100%;
+}
+
+footer svg{
+    fill:black
+}
+
+:root{
+    --primary-color: #3b322c;
+    --primary-transparant-color: #3b322c66;
+    --primary-bg-color: #E2E2E2;
+    --primary-container-color: #F6F6F6;
 }
