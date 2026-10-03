@@ -129,6 +129,7 @@ nav{
 .profile .card h1{
     color: var(--primary-color);
     font-weight: bold;
+    margin-bottom: 0;
 }
 
 .contact h1, .contact p{
