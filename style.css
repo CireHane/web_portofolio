@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Carme&family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carme&family=Lexend:wght@100..900&display=swap');
 
 html{
     text-decoration: none;
@@ -22,9 +24,22 @@ header{
 .thumbnail{
     width: 100%;
     aspect-ratio: 16/5;
-    background-image: url("https://placehold.co/1600x900");
+    background-image: url("https://placehold.co/1600x700");
     background-repeat: no-repeat;
     background-size: 100%;
+    background-color: #00000060;
+    background-blend-mode: multiply;
+    box-shadow: 0 0 2rem 0 inset #00000060;
+}
+
+.thumbnail h1{
+    color: var(--primary-container-color);
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
 }
 
 nav{
@@ -39,13 +54,35 @@ nav{
     font-size: 1.2rem;
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
+    color: var(--primary-container-color);
 }
 
-.gallery{
+.nav-link:hover{
+    font-size: 1.2rem;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    color: var(--primary-bg-color);
+}
+
+.home h1, .home p{
+    color: var(--primary-color);
+}
+
+.home h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+.gallery, .profile{
     padding: 3em;
     box-shadow: 0 3em 3em #C8C9CA;
     border-radius: 1.5rem;
     background-color: var(--primary-container-color);
+}
+
+.home .card{
+    transition: ease-in-out 0.1s;
+    background-color: var(--primary-bg-color)
 }
 
 .gallery .card{
@@ -55,7 +92,7 @@ nav{
     min-height: max-content;
 }
 
-.gallery .card:hover{
+.home .card:hover, .gallery .card:hover{
     transition: ease-in-out 0.1s;
     box-shadow: 0 0 0.5rem 0.1rem #C8C9CA;
     transform: scale(101%);
@@ -71,10 +108,40 @@ nav{
     border-radius: 10% 10% 0 0;
 }
 
-.gallery-card p{
+.gallery-card p, .home .card-subtext{
     font-size: 0.8rem;
     line-height: 120%;
     color: var(--primary-transparant-color)
+}
+
+.profile .col{
+    height: 100%;
+}
+
+.profile .card{
+    border: 0;
+}
+
+.profile .card p{
+    color: var(--primary-color);
+}
+
+.profile .card h1{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.contact h1, .contact p{
+    color: var(--primary-color);
+}
+
+.contact h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.contact p{
+    font-size: 1.45rem;
 }
 
 footer{
